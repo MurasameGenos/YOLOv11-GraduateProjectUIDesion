@@ -1,0 +1,104 @@
+/* win11_dark.qss */
+
+/* 全局字体和背景 */
+QWidget {
+    font-family: "Segoe UI Variable", "Segoe UI", "Microsoft YaHei", sans-serif;
+    font-size: 13px;
+    background-color: #202020;
+    color: #FFFFFF;
+}
+
+/* 输入框和下拉框 */
+QLineEdit, QComboBox, QSpinBox {
+    background-color: #2D2D2D;
+    border: 1px solid #454545;
+    border-bottom: 2px solid #555555;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+}
+
+QLineEdit:hover, QComboBox:hover, QSpinBox:hover {
+    background-color: #333333;
+    border-bottom: 2px solid #4CC2FF; /* Win11 经典蓝 */
+}
+
+QLineEdit:focus, QComboBox:focus, QSpinBox:focus {
+    background-color: #1E1E1E;
+    border-bottom: 2px solid #4CC2FF;
+}
+
+/* 按钮 (Win11 圆角及悬浮反馈) */
+QPushButton {
+    background-color: #2D2D2D;
+    border: 1px solid #3A3A3A;
+    border-radius: 5px;
+    padding: 6px 16px;
+    color: #FFFFFF;
+}
+
+QPushButton:hover {
+    background-color: #383838;
+    border: 1px solid #454545;
+}
+
+QPushButton:pressed {
+    background-color: #252525;
+    border: 1px solid #3A3A3A;
+    color: #B0B0B0;
+}
+
+/* 强调按钮 (开始按钮) */
+QPushButton#btn_start {
+    background-color: #005FB8;
+    border: 1px solid #005FB8;
+    color: white;
+}
+QPushButton#btn_start:hover {
+    background-color: #0068C7;
+}
+QPushButton#btn_start:pressed {
+    background-color: #0054A6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 分组框 QGroupBox */
+QGroupBox {
+    border: 1px solid #333333;
+    border-radius: 8px;
+    margin-top: 2ex;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    color: #EEEEEE;
+    left: 10px;
+}
+
+/* 日志文本框 */
+QTextEdit {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* 表格 QTableWidget */
+QTableWidget {
+    background-color: #202020;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    gridline-color: #333333;
+}
+
+QHeaderView::section {
+    background-color: #2D2D2D;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #444444;
+    border-right: 1px solid #444444;
+    font-weight: bold;
+}
